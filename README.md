@@ -1,3 +1,7 @@
+# Edited
+## All pretrained models of FIDTM cam be found here:
+
+[One Drive](https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBa19XWnNoNUZsMGxoQ25ldWJrSXYxbVRsbEFaP2U9MHpNSFNN&id=255D1679C866D64F%21553&cid=255D1679C866D64F)
 
 # Focal Inverse Distance Transform Map
 [[Project page](https://dk-liang.github.io/FIDTM/)] [[paper](https://arxiv.org/abs/2102.07925)]   

@@ -79,9 +79,10 @@ Generate image file list: python make_npydata.py
 
 ```
 python test.py --dataset ShanghaiA --pre ./model/ShanghaiA/model_best.pth --gpu_id 0
-python test.py --dataset ShanghaiB --pre ./model/ShanghaiB/model_best.pth --gpu_id 1  
-python test.py --dataset UCF_QNRF --pre ./model/UCF_QNRF/model_best.pth --gpu_id 2  
-python test.py --dataset JHU --pre ./model/JHU/model_best.pth --gpu_id 3  
+python test.py --dataset ShanghaiB --pre ./model/ShanghaiB/model_best.pth --gpu_id 0
+python test.py --dataset UCF_QNRF --pre ./model/UCF_QNRF/model_best.pth --gpu_id 0
+python test.py --dataset JHU --pre ./model/JHU/model_best.pth --gpu_id 0
+python test.py --dataset NWPU --pre ./model/BWPU/model_best.pth --gpu_id 0
 ```
 **If you want to generate bounding boxes,**
 
@@ -172,10 +173,10 @@ Here, we provide the training baseline code:
 **Training baseline example:**
 
 ```
-python train_baseline.py --dataset ShanghaiA --crop_size 256 --save_path ./save_file/ShanghaiA 
-python train_baseline.py --dataset ShanghaiB --crop_size 256 --save_path ./save_file/ShanghaiB  
-python train_baseline.py --dataset UCF_QNRF --crop_size 512 --save_path ./save_file/QNRF
-python train_baseline.py --dataset JHU --crop_size 512 --save_path ./save_file/JHU
+python train_baseline.py --dataset ShanghaiA --crop_size 256 --save_path ./save_file/ShanghaiA --gpu_id 0
+python train_baseline.py --dataset ShanghaiB --crop_size 256 --save_path ./save_file/ShanghaiB  --gpu_id 0
+python train_baseline.py --dataset UCF_QNRF --crop_size 512 --save_path ./save_file/QNRF --gpu_id 0
+python train_baseline.py --dataset JHU --crop_size 512 --save_path ./save_file/JHU --gpu_id 0
 ```
 For ShanghaiTech, you can train by a GPU with 8G memory. For other datasets, please utilize a single GPU with 24G memory or multiple GPU for training. 
 
